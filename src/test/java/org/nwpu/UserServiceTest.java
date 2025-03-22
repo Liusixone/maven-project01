@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class UserServiceTest {
     @Test
     public void testGetAge() {
-        UserService userService = new UserService();
         String idCard = "110101199001011234";// 1990年1月1日出生
         Integer age = new UserService().getAge(idCard);
         System.out.println("年龄: " + age);
@@ -19,7 +18,6 @@ public class UserServiceTest {
 
     @Test
     public void testGetGender() {
-        UserService userService = new UserService();
         String idCard = "110101199001011234";// 男
         String gender = new UserService().getGender(idCard);
         assertEquals("男",gender, "性别不正确");
